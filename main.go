@@ -52,6 +52,8 @@ func Main(args []string) error {
 	switch opt.outputFormat {
 	case "simple":
 		outputFormatter = OutputSimple
+	case "json":
+		outputFormatter = OutputJSON
 	default:
 		return errors.Errorf("%s is unknown output formatter.", opt.outputFormat)
 	}
