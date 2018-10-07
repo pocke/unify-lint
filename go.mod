@@ -1,3 +1,6 @@
 module github.com/pocke/unify-lint
 
-require github.com/ogier/pflag v0.0.2-0.20160129220114-45c278ab3607 // indirect
+require (
+	github.com/pkg/errors v0.8.0
+	github.com/spf13/pflag v1.0.3
+)
